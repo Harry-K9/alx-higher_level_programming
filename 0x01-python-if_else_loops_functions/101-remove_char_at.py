@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 def remove_char_at(str, n):
-    part = str[:n]
-    parts = str[n+1:]
-    return part + parts
+    i = 0
+    newstr = ""
+    while i != len(str):
+        if i == n:
+            pass
+        else:
+            newstr += str[i]
+        i += 1
+    return newstr
